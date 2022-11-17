@@ -1,0 +1,44 @@
+.heroes {
+  list-style: none;
+  li {
+    button {
+      text-align: left;
+      width: 14.5rem;
+      .name {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          height: 2px;
+          bottom: -5px;
+          left: 0;
+          width: 100%;
+          background-color: #333;
+          scale: 0 1;
+          transform-origin: left;
+          transition: scale 0.5s;
+        }
+      }
+    }
+    &.selected button {
+      .name {
+        transform-origin: right;
+        &:before {
+          scale: 1 1;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 556px) {
+  .heroes {
+    columns: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .heroes {
+    columns: 3;
+  }
+}
