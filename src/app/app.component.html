@@ -1,3 +1,7 @@
 <h1>{{title}}</h1>
-<app-heroes></app-heroes>
+<nav>
+  <a class='btn btn--nav' routerLink="/dashboard">Dashboard</a>
+  <a class='btn btn--nav' routerLink="/heroes">Heroes</a>
+</nav>
+<router-outlet></router-outlet>
 <app-messages></app-messages>

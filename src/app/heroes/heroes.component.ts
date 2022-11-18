@@ -9,7 +9,6 @@ import { MessagesService } from '../messages.service';
   styleUrls: ['./heroes.component.scss'],
 })
 export class HeroesComponent {
-  selectedHero?: Hero;
   heroes: Hero[] = [];
 
   constructor(
@@ -25,10 +24,5 @@ export class HeroesComponent {
 
   ngOnInit(): void {
     this.getHeroes();
-  }
-
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-    this.messagesService.add(`HeroesComponent: Selected Hero id - ${hero.id}`);
   }
 }
