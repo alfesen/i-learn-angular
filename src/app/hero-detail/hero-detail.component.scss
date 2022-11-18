@@ -1,13 +1,10 @@
 .hero {
-  text-align: center;
   div:first-of-type {
     margin-bottom: 0.5em;
   }
   div:last-of-type {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
     width: min(80%, 400px);
     label {
       margin-bottom: 0.5em;
