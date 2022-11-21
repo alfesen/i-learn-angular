@@ -1,7 +1,27 @@
 .heroes {
   list-style: none;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 24rem;
+    label {
+      margin-bottom: 0.5em;
+    }
+  }
   .btn {
     margin: 0 0 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__delete {
+      margin: 0;
+      padding: 0.5em;
+      &:hover {
+        background-color: #fff;
+        color: black;
+      }
+    }
   }
 }
 

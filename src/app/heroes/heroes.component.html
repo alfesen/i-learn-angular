@@ -6,5 +6,13 @@
       <span class="badge">{{hero.id}} </span>
       {{hero.name}}
     </a>
+    <button type="button" class="heroes__delete" title="Delete Hero" (click)="delete(hero)" class="btn__delete">x</button>
   </li>
 </ul>
+
+<div class="heroes__form">
+  <h3>Add hero</h3>
+  <label for="new-hero">Hero name: </label>
+  <input type="text" id="new-hero" #heroName>
+  <button type="button" class="heroes__form--btn" (click)="add(heroName.value); heroName.value = ''">Add hero</button>
+</div>
