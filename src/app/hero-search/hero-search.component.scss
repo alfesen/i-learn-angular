@@ -1,0 +1,38 @@
+.search {
+  &__component {
+    display: flex;
+    flex-direction: column;
+    label {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 0.5em;
+    }
+    input {
+      width: 100%;
+      max-width: 25rem;
+    }
+  }
+
+  &__result {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      a {
+        display: block;
+        
+        padding: 0.5em;
+        width: 100%;
+        max-width: 25rem;
+        text-decoration: none;
+        color: #000;
+        border: 1px solid grey;
+        border-top: none;
+        &:hover {
+          background-color: #435a60;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

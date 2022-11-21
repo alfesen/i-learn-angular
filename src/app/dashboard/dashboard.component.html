@@ -1,4 +1,7 @@
 <h2>Top Heroes</h2>
+
+<app-hero-search></app-hero-search>
+
 <div class="heroes-menu">
   <a class="btn btn--nav" *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}">
     {{hero.name}}
